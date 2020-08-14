@@ -6,7 +6,6 @@ import './index.css'
 function App() {
   return (
     <div className='wrapper'>
-
       <div className='flex-row'>
         <input className='calculator-input ' type="number"></input>
       </div>
@@ -22,21 +21,21 @@ function App() {
         </button>
         <button className='caculator-button light-blue m-5px'>
           ÷
-      </button>
+        </button>
       </div>
       <div className='flex-row'>
         <button className='caculator-button light-grey m-5px'>
           4
-      </button>
+        </button>
         <button className='caculator-button light-grey m-5px'>
           5
-      </button>
+        </button>
         <button className='caculator-button light-grey m-5px'>
           6
       </button>
         <button className='caculator-button light-blue m-5px'>
           ×
-  </button>
+        </button>
       </div>
       <div className='flex-row'>
         <button className='caculator-button light-grey m-5px'>
@@ -65,6 +64,12 @@ function App() {
         <button className='caculator-button light-blue m-5px'>
           +
 </button>
+      </div>
+
+      <div className='flex-row'>
+        <button className='caculator-button clear-button light-blue m-5px'>
+          C
+      </button>
       </div>
     </div>
 
