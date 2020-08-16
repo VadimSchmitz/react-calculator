@@ -1,50 +1,30 @@
 import React from "react";
 import "./index.css";
-import "./FlexBox.css";
+
+
 
 function App() {
   return (
-
-
     <div className='body'>
-    
-   
-    <div className="wrapper">
-      <div className="flex-row">
-        <input className="calculator-input " type="number"></input>
-      </div>
-
-      <div className="number-wrapper">
-        <div className="flex-row ">
-          <button className="light-grey">7</button>
-          <button className="light-grey">8</button>
-          <button className="light-grey">9</button>
-          <button className="light-blue">÷</button>
-        </div>
-        <div className="flex-row">
-          <button className="light-grey">4</button>
-          <button className="light-grey">5</button>
-          <button className="light-grey">6</button>
-          <button className="light-blue">×</button>
-        </div>
-        <div className="flex-row">
-          <button className="light-grey">1</button>
-          <button className="light-grey">2</button>
-          <button className="light-grey">3</button>
-          <button className="light-blue">-</button>
-        </div>
-        <div className="flex-row">
-          <button className="light-grey">0</button>
-          <button className="light-grey">.</button>
-          <button className="light-grey">=</button>
-          <button className="light-blue">+</button>
-        </div>
-        <div className="flex-row">
-          <button className="caculator-button clear-button light-blue">
-            C
-          </button>
-        </div>
-      </div>
+      <div className="calculator">
+        <input className="calculator-input" type="number"></input>
+        <button className="light-grey b7">7</button>
+        <button className="light-grey b8">8</button>
+        <button className="light-grey b9">9</button>
+        <button className="light-blue bdiv">÷</button>
+        <button className="light-grey b4">4</button>
+        <button className="light-grey b5">5</button>
+        <button className="light-grey b6">6</button>
+        <button className="light-blue bx">×</button>
+        <button className="light-grey b1">1</button>
+        <button className="light-grey b2">2</button>
+        <button className="light-grey b3">3</button>
+        <button className="light-blue b-">-</button>
+        <button className="light-grey b0">0</button>
+        <button className="light-grey bdot">.</button>
+        <button className="light-grey beq">=</button>
+        <button className="light-blue bpl">+</button>
+        <button className="light-blue bc">C</button>
       </div>
     </div>
   );
