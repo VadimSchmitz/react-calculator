@@ -1,142 +1,134 @@
+html, body, #root, .App {
+  height: 100%;
+  overflow: hidden;
+  margin:0px
+}
 
-.light-grey{
+
+
+.light-grey {
   border: solid 2px rgba(232, 232, 232, 1);
   background-color: rgba(232, 232, 232, 1);
 }
 
-.light-grey:hover{
+.light-grey:hover {
   background-color: rgba(124, 124, 124, 0.452);
   color: rgb(0, 0, 0);
 }
 
-.light-grey:active, .light-grey:focus {
+.light-grey:active,
+.light-grey:focus {
   outline: 0;
   -moz-outline-style: none;
 }
 
-.light-grey:active{
+.light-grey:active {
   background-color: rgb(151, 151, 151);
   border: solid 2px rgba(46, 49, 49, 1);
   color: rgb(0, 0, 0);
 }
 
-.light-blue{
+.light-blue {
   border: solid 2px rgb(208, 242, 255);
   background-color: rgb(208, 242, 255);
 }
 
-.light-blue:hover{
+.light-blue:hover {
   background-color: rgb(182, 234, 255);
   color: rgb(0, 0, 0);
 }
 
-.light-blue:active, .light-blue:focus {
+.light-blue:active,
+.light-blue:focus {
   outline: 0;
   -moz-outline-style: none;
-
 }
 
-.light-blue:active{
+.light-blue:active {
   background-color: rgb(147, 224, 255);
   border: solid 2px rgba(46, 49, 49, 1);
   color: rgb(0, 0, 0);
 }
 
-.wrapper button{
-  min-width: 140px;
-  min-height: 140px;
-  
-  height: 300px;
-  
-  flex:1;
-  color:rgb(0, 0, 0);
-  display:flex; /*creates a flexbox */
-  align-items: center;  /*aligns vertically */
-  justify-content: center;  /*aligns horizontally */
-  border-radius: 15px;
+.calculator button, .calculator-input {
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
   font-weight: bold;
-  margin:5px;
+  margin: 5px;
 }
 
-.body{
+.body {
   border: solid 2px green;
-  justify-items: center;
-  justify-content: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
 
-.flex-row-input{
-  flex:1;
-  display: flex;
-  flex-direction: row;     /* make main axis horizontal (default setting) */
-  justify-content: center; /* center items horizontally, in this case */
-  align-items: center;     /* center items vertically, in this case */
-  height: auto;
-  width: 100%;
-  border: solid 2px red;
+.calculator {
+  min-width: 440px;
+  min-height: 700px;
+
+  height: 90%;
+  width: 40%;
+  border: solid 7px rgba(46, 49, 49, 1);
+  border-radius: 30px;
+  
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+
+
+
+  grid-template-areas:
+    "i i i i i"
+    "7 8 9 bdiv c"
+    "4 5 6 x c"
+    "1 2 3 min c"
+    "0 dot eq pl c";
 }
 
-.number-wrapper{
-  border: solid 15px yellow;
-  display: flex;
-  flex-direction: row;
-  flex:1;
-  width: 100%;
+.calculator .calculator-input {
+  grid-area: i;
 }
-
-.flex-row {
-  display: flex;
-  flex-direction: column;     /* make main axis horizontal (default setting) */
-  justify-content: center; /* center items horizontally, in this case */
-  align-items: center;     /* center items vertically, in this case */
-  height: auto;
-  flex:1;
-  border: solid 2px red;
+.calculator .bdot {
+  grid-area: dot;
 }
-
-.wrapper{
-  border: solid 15px rgba(46, 49, 49, 1);
-  max-width: 50%;
-  margin: 20px; 
-  display: flex;
-  justify-content: center; 
-  align-items: center;    
-  flex-direction: column;
-
+.calculator .bdiv {
+  grid-area: bdiv;
 }
-
-
-
-
-
-
-.wrapper .flex-row .calculator-input{
-  display: flex;
-
-  width: 100%;
-  height: 90px;
-  font-size: 20px;
-  border-radius: 15px;
-  margin: 10px;
+.calculator .bx {
+  grid-area: x;
+}
+.calculator .b- {
+  grid-area: min;
+}
+.calculator .beq {
+  grid-area: eq;
+}
+.calculator .bc {
+  grid-area: c;
+}
+.calculator .bpl {
+  grid-area: pl;
 }
 
 
-.wrapper .flex-row .clear-button{
-  display: flex;
- 
-  width: auto;
-}
 
 
-.calculator-input:active, .calculator-input:focus {
+
+.calculator-input:active,
+.calculator-input:focus {
   outline: 0;
   -moz-outline-style: none;
 }
 
 
 
- /*HIDES INPUT ARROWS FOR Chrome, Safari, Edge, Opera */
+/*HIDES INPUT ARROWS FOR Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -144,6 +136,6 @@ input::-webkit-inner-spin-button {
 }
 
 /*HIDES INPUT ARROWS FOR Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
