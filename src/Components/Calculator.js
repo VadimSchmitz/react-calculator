@@ -5,24 +5,15 @@ export default function Calculator() {
     let [calculation, setCalulation] = useState(0)
     
 
-    
+
 
     function addPlus(){
         setShowCalulation(showCalculation+'+')
-        Number(showCalculation)
-
- 
-        console.log(calculation)
-        console.log(showCalculation)
+       
     }
 
     function sum() {
-
-        let test = Number(showCalculation)
-        console.log(test)
-
-
-        setCalulation(calculation = parseInt(showCalculation))
+        setShowCalulation(eval(showCalculation))
         console.log(calculation)
         console.log(showCalculation)
     }
