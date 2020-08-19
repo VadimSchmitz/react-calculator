@@ -59,8 +59,13 @@ html, body, #root, .App {
   margin: 5px;
 }
 
+.calculator-input{
+  font-size: 40px;
+}
+
 .body {
   border: solid 2px green;
+    padding: 50px;
     height: 100%;
     display: flex;
     justify-content: center;
