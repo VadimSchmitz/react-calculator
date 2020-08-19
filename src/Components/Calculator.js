@@ -3,14 +3,28 @@ import React, { useState } from 'react'
 export default function Calculator() {
     let [showCalculation, setShowCalulation] = useState('')
     let [calculation, setCalulation] = useState(0)
+    
+
+    
+
+    function addPlus(){
+        setShowCalulation(showCalculation+'+')
+        Number(showCalculation)
+
+ 
+        console.log(calculation)
+        console.log(showCalculation)
+    }
+
+    function sum() {
+
+        let test = Number(showCalculation)
+        console.log(test)
 
 
-
-    function sum(){
-
-    setCalulation(calculation = parseInt(showCalculation))
-       console.log(calculation)
-       console.log(showCalculation)
+        setCalulation(calculation = parseInt(showCalculation))
+        console.log(calculation)
+        console.log(showCalculation)
     }
 
     return (
@@ -25,18 +39,18 @@ export default function Calculator() {
                 <button className="light-grey b5">5</button>
                 <button className="light-grey b6">6</button>
                 <button className="light-blue bx">×</button>
-                <button className="light-grey b1" onClick={() => setShowCalulation(showCalculation+'1')}>1</button>
+                <button className="light-grey b1" onClick={() => setShowCalulation(showCalculation + '1')}>1</button>
                 <button className="light-grey b2">2</button>
                 <button className="light-grey b3">3</button>
                 <button className="light-blue b-">-</button>
                 <button className="light-grey b0">0</button>
                 <button className="light-grey bdot">.</button>
-                <button className="light-grey beq" onClick={()=> sum()}>=</button>
-                <button className="light-blue bpl" onClick={() => setShowCalulation(showCalculation +='+')}>+</button>
+                <button className="light-grey beq" onClick={() => sum()}>=</button>
+                <button className="light-blue bpl" onClick={() => addPlus()}>+</button>
                 <button className="light-blue bc">C</button>
-     
+
             </div>
-   
+
         </div>
     )
 }
