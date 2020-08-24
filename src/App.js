@@ -6,6 +6,11 @@ function App() {
   return (
     <div className='body'>
       <Calculator/>
+
+      <div className='nigger'>
+      <div className='one'>one</div>
+      <div className='two'>two</div>
+      </div>
     </div>
   );
 }

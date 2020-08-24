@@ -90,6 +90,30 @@ button, .calculator-input {
     "zero dot equals plus clear";
 }
 
+.one{
+  color: red;
+  border: solid 10px red;
+  grid-area: one;
+}
+.two{
+  color: green;
+  border: solid 10px green;
+  grid-area: two;
+}
+.nigger{
+  width: 300px;
+  height: 300px;
+  border: solid 10px purple;
+  display: grid;
+
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "one one"
+    "two two"
+;
+}
+
 
 .calculator-input {
   grid-area: i;
@@ -97,52 +121,52 @@ button, .calculator-input {
 .b1{
   grid-area: one;
 }
-.calculator numbers .b2{
+.b2{
   grid-area: two;
 }
-.calculator numbers .b3{
+.b3{
   grid-area: three;
 }
-.calculator numbers .b4{
+.b4{
   grid-area: four;
 }
-.calculator numbers .b5{
+.b5{
   grid-area: five;
 }
-.calculator numbers .b6{
+.b6{
   grid-area: six;
 }
-.calculator numbers .b7{
+.b7{
   grid-area: seven;
 }
-.calculator numbers .b8{
+.b8{
   grid-area: eight;
 }
-.calculator numbers .b9{
+.b9{
   grid-area: nine;
 }
-.calculator numbers .b0{
+.b0{
   grid-area: zero;
 }
-.calculator numbers .bx{
+.bx{
   grid-area: multiply;
 }
-.calculator numbers .b-{
+.b-{
   grid-area: minus;
 }
-.calculator numbers .beq{
+.beq{
   grid-area: equals;
 }
-.calculator numbers .bpl{
+.bpl{
   grid-area: plus;
 }
-.calculator numbers .bc{
+.bc{
   grid-area: clear;
 }
-.calculator numbers .bdiv{
+.bdiv{
   grid-area: divide;
 }
-.calculator numbers .bdot{
+.bdot{
   grid-area: dot;
 }
 
