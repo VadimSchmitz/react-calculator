@@ -22,7 +22,7 @@ export default function Calculator() {
   console.log(calculation)
 
   return (
-    <div>
+    <div className='calculator'>
       <CalculatorTotal total={calculation}/>
       <CalculatorKeyPad onClick={onClick} />
     </div>

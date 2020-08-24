@@ -2,8 +2,6 @@ import React from "react";
 
 export default function CalculatorTotal({ total }) {
   return (
-    <div>
-      <p>{total}</p>
-    </div>
+      <input className='calculator-input' value={total} readOnly></input>
   );
 }
