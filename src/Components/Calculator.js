@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CalculatorTotal from "./CalculatorTotal";
 import CalculatorKeyPad from "./CalculatorKeyPad";
 
 export default function Calculator() {
@@ -19,12 +18,10 @@ export default function Calculator() {
     }
   };
 
-  console.log(calculation)
-
   return (
-    <div className='calculator'>
-      <CalculatorTotal total={calculation}/>
-      <CalculatorKeyPad onClick={onClick} />
+
+    <div>
+      <CalculatorKeyPad  onClick={onClick} calculation={calculation}/>
     </div>
   );
 }
