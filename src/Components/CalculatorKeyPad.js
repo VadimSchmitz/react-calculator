@@ -6,7 +6,6 @@ export default function CalculatorKeyPad({onClick, calculation}) {
     return (
         <div className='calculator'>
             <CalculatorTotal calculation={calculation}/>
-            
             <button className="light-grey button-1" name='1' onClick={e=>onClick(e.target.name)}>1</button>
             <button className="light-grey button-2" name='2' onClick={e=>onClick(e.target.name)}>2</button>
             <button className="light-grey button-3" name='3' onClick={e=>onClick(e.target.name)}>3</button>
