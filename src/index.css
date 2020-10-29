@@ -2,7 +2,7 @@ html, body, #root, .App {
   height: 100%;
   overflow: hidden;
   margin:0px;
-  background-color: gray;
+  background-color: lightcyan;
 }
 
 .light-grey {
@@ -63,7 +63,6 @@ button, .calculator-input {
 }
 
 .body {
-  border: solid 2px green;
     padding: 50px;
     height: 100%;
     display: flex;
