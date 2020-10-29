@@ -63,7 +63,6 @@ button, .calculator-input {
 }
 
 .body {
-  border: solid 2px green;
     padding: 50px;
     height: 100%;
     display: flex;
