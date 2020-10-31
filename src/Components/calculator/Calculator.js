@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CalculatorKeyPad from "./CalculatorKeyPad";
+import CalculatorKeyPad from "../CalculatorKeyPad";
 
 export default function Calculator() {
   const [calculation, setCalulation] = useState("");
@@ -15,7 +15,7 @@ export default function Calculator() {
   };
 
   return (
-    <div>
+    <div data-testid='calculator'>
       <CalculatorKeyPad onClick={onClick} calculation={calculation} />
     </div>
   );
